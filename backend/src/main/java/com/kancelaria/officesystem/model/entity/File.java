@@ -1,6 +1,6 @@
 package com.kancelaria.officesystem.model.entity;
 
-import com.kancelaria.officesystem.enums.FileType;
+import com.kancelaria.officesystem.model.enums.FileType;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;

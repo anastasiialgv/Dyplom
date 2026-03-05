@@ -1,4 +1,4 @@
-package com.kancelaria.officesystem.enums;
+package com.kancelaria.officesystem.model.enums;
 
 public enum UserRole {
     ADMIN,

@@ -1,6 +1,6 @@
 package com.kancelaria.officesystem.model.entity;
 
-import com.kancelaria.officesystem.enums.UserRole;
+import com.kancelaria.officesystem.model.enums.UserRole;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;

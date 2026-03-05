@@ -1,6 +1,6 @@
 package com.kancelaria.officesystem.model.entity;
 
-import com.kancelaria.officesystem.enums.ContactType;
+import com.kancelaria.officesystem.model.enums.ContactType;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
@@ -17,16 +17,16 @@ public class Contact {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_message")
-    private int id_message;
+    private int idMessage;
 
     @NotNull
     @Column(name = "contact_date", nullable = false)
-    private LocalDateTime contact_date;
+    private LocalDateTime contactDate;
 
     @NotNull
     @Enumerated(EnumType.STRING)
     @Column(name = "contact_type", nullable = false, columnDefinition = "\"ContactType\"")
-    private ContactType contact_type;
+    private ContactType contactType;
 
     @NotNull
     @Column(name = "result", nullable = false)

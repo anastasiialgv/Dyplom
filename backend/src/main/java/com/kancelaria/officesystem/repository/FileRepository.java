@@ -1,0 +1,18 @@
+package com.kancelaria.officesystem.repository;
+
+import com.kancelaria.officesystem.model.enums.FileType;
+import com.kancelaria.officesystem.model.entity.File;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+import java.util.Optional;
+
+@Repository
+public interface FileRepository extends JpaRepository<File, Integer> {
+    Optional<File> findByLawCase_NumberCaseAndFileType(Integer caseId, FileType fileType);
+
+    List<File> findByLawCase_NumberCase(Integer numberCase);
+
+    List<File> findByLawCase_Employee_UserId(Integer userId);
+}

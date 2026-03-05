@@ -1,7 +1,7 @@
 package com.kancelaria.officesystem.model.entity;
 
 
-import com.kancelaria.officesystem.enums.ReportType;
+import com.kancelaria.officesystem.model.enums.ReportType;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;

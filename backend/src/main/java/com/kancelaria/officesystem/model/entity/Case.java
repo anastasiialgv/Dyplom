@@ -1,7 +1,7 @@
 package com.kancelaria.officesystem.model.entity;
 
 
-import com.kancelaria.officesystem.enums.CaseStatus;
+import com.kancelaria.officesystem.model.enums.CaseStatus;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
 import lombok.*;
